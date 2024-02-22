@@ -1,8 +1,8 @@
 // @ts-nocheck
 
-import { PrismaClient } from "@prisma/client/extension";
+import { PrismaClient } from "@prisma/client";
 
-let prisma = PrismaClient;
+let prisma = new PrismaClient;
 declare global {
     namespace NodeJS {
         interface Globle {
